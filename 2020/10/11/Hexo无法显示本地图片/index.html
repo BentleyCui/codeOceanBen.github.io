@@ -6,27 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Bias | Ben的博客</title>
+  <title>Hexo无法显示本地图片 | Ben的博客</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="error来源 error due to “bias”  error due to “variance”(均值和方差)">
+  <meta name="description" content="最近搭建hexo博客时遇到了图片部署后不显示的问题，后来看了一些博客后解决了该问题解决方案如下：">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Bias">
-<meta property="og:url" content="http://example.com/2020/10/07/Bias/index.html">
+<meta property="og:title" content="Hexo无法显示本地图片">
+<meta property="og:url" content="http://example.com/2020/10/11/Hexo%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/index.html">
 <meta property="og:site_name" content="Ben的博客">
-<meta property="og:description" content="error来源 error due to “bias”  error due to “variance”(均值和方差)">
+<meta property="og:description" content="最近搭建hexo博客时遇到了图片部署后不显示的问题，后来看了一些博客后解决了该问题解决方案如下：">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2020/10/07/Bias/image01.png">
-<meta property="og:image" content="http://example.com/2020/10/07/Bias/image03.png">
-<meta property="og:image" content="http://example.com/2020/10/07/Bias/image05.png">
-<meta property="og:image" content="http://example.com/2020/10/07/Bias/image06.png">
-<meta property="og:image" content="http://example.com/2020/10/07/Bias/image06.png">
-<meta property="article:published_time" content="2020-10-07T06:10:07.000Z">
-<meta property="article:modified_time" content="2020-10-07T07:21:06.216Z">
-<meta property="article:author" content="Ben">
+<meta property="article:published_time" content="2020-10-11T08:25:36.000Z">
+<meta property="article:modified_time" content="2020-10-11T08:29:59.721Z">
+<meta property="article:author" content="Bentley">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2020/10/07/Bias/image01.png">
   
     <link rel="alternative" href="/atom.xml" title="Ben的博客" type="application/atom+xml">
   
@@ -72,7 +66,7 @@
 			<img src="/img/head.jpg" class="js-avatar">
 		</a>
 		<hgroup>
-			<h1 class="header-author"><a href="/">Ben</a></h1>
+			<h1 class="header-author"><a href="/">Bentley</a></h1>
 		</hgroup>
 		
 
@@ -128,7 +122,7 @@
 				</a>
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">Ben</h1>
+			  <h1 class="header-author js-header-author">Bentley</h1>
 			</hgroup>
 			
 			
@@ -165,14 +159,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Bias" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Hexo无法显示本地图片" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      Bias
+      Hexo无法显示本地图片
     </h1>
   
 
@@ -184,8 +178,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2020/10/07/Bias/" class="archive-article-date">
-        <time datetime="2020-10-07T06:10:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-07</time>
+<a href="/2020/10/11/Hexo%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/" class="archive-article-date">
+        <time datetime="2020-10-11T08:25:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-11</time>
 </a>
 
   
@@ -198,7 +192,7 @@
       <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
       <i class="icon-statistics"></i>
       <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">102字</span>
+      <span class="post-count">232字</span>
     </span>
   </span>
 
@@ -218,30 +212,14 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h4 id="error来源"><a href="#error来源" class="headerlink" title="error来源"></a>error来源</h4><ol>
-<li><p>error due to “bias”</p>
-</li>
-<li><p>error due to “variance”<br>(均值和方差)</p>
+    <p>最近搭建hexo博客时遇到了图片部署后不显示的问题，后来看了一些博客后解决了该问题<br>解决方案如下：  </p>
 <a id="more"></a>
-
-</li>
+<ol>
+<li>在根目录下配置文件_config.yml 中有 post_asset_folder:false改为true。这样在建立文件时，Hexo会自动建立一个与文章同名的文件夹，这样就可以把与该文章相关的所有资源（图片）都放到那个文件夹里方便后面引用。如这里我放了一张test.jpg的图片。</li>
+<li>git bash安装插件：npm install <a target="_blank" rel="noopener" href="https://github.com/7ym0n/hexo-asset-image">https://github.com/7ym0n/hexo-asset-image</a> –save（这是个修改过的插件，经测试无问题），使用这个插件来引入图片，而不是网上那些方法里说的用传统md语法相对路径的方法。</li>
+<li>插入图片时用这种方式：</li>
+<li>这样就能成功显示了，测试下吧：hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</li>
 </ol>
-<img src="/2020/10/07/Bias/image01.png" class title="This is image01">
-
-
-<h5 id="简单model与复杂model"><a href="#简单model与复杂model" class="headerlink" title="简单model与复杂model"></a>简单model与复杂model</h5><p>如果Bias过大，表示underfitting。如果Variance过大，表示Overfitting.过拟合与欠拟合 </p>
-<h3 id="那什么是bias和variance呢"><a href="#那什么是bias和variance呢" class="headerlink" title="那什么是bias和variance呢"></a>那什么是bias和variance呢</h3><img src="/2020/10/07/Bias/image03.png" class>
-
-<h5 id="bias表示f与靶心的距离-，variance表示各个点到f的距离"><a href="#bias表示f与靶心的距离-，variance表示各个点到f的距离" class="headerlink" title="bias表示f与靶心的距离 ，variance表示各个点到f的距离"></a>bias表示f<del>与靶心的距离 ，variance表示各个点到f</del>的距离</h5><img src="/2020/10/07/Bias/image05.png" class>
-<h5 id="variance体现了离散程度"><a href="#variance体现了离散程度" class="headerlink" title="variance体现了离散程度"></a>variance体现了离散程度</h5><p>model简单， variance越小</p>
-<h3 id="Bias"><a href="#Bias" class="headerlink" title="Bias"></a>Bias</h3><p>E[f star]=f~<br>bias:if we average all the f*, is it close to f hat </p>
-<img src="/2020/10/07/Bias/image06.png" class>
-
-<img src="/2020/10/07/Bias/image06.png" class>
-
-
-<h1 id="Model-Selection"><a href="#Model-Selection" class="headerlink" title="Model Selection"></a>Model Selection</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-
 
     
 
@@ -274,11 +252,11 @@
       <ul class="post-copyright">
         <li>
           <strong>本文作者：</strong>
-          Ben
+          Bentley
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="http://example.com/2020/10/07/Bias/" title="Bias" target="_blank">http://example.com/2020/10/07/Bias/</a>
+          <a href="http://example.com/2020/10/11/Hexo无法显示本地图片/" title="Hexo无法显示本地图片" target="_blank">http://example.com/2020/10/11/Hexo无法显示本地图片/</a>
         </li>
         
         <li>
@@ -345,7 +323,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/10/07/Bias/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/10/11/Hexo%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/" alt="微信分享二维码"> -->
     </div>
 </div>
 
@@ -360,18 +338,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2020/10/07/Hexo%E5%86%99%E5%8D%9A%E6%96%87%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Hexo写博文本地图片无法显示问题
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/10/05/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2020/10/11/Bias%E5%81%8F%E5%B7%AE/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Bias偏差</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -414,7 +383,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018-2020 <a href="http://example.com/" target="_blank">Ben</a>
+    		&copy; 2018-2020 <a href="http://example.com/" target="_blank">Bentley</a>
     	</div>
       	<div class="footer-right">
 			
@@ -560,7 +529,7 @@
     	<section class="tools-section tools-section-me" q-show="aboutme">
         
           
-  	  		<div class="aboutme-wrap" id="aboutme">在读研究生<br><br>希望与大家一起进步<br>谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="aboutme"><br>希望与大家一起进步<br>谢谢大家</div>
   	  	
     	</section>
     
